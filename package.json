@@ -10,7 +10,9 @@
     "@types/node": "^16.18.31",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-router": "^6.11.2",
     "react-router-dom": "^6.11.2",
@@ -23,8 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-    "deploy": "echo chambaud.com > ./build/CNAME && gh-pages -d build",
-    "custom-deploy": "node pages.js"
+    "deploy": "echo chambaud.com > ./build/CNAME && gh-pages -d build -b main"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "sass": "^1.62.1"
   }
 }
